@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="اسأله دينية وبالأخص إسلامية">
+    <title>اسأله إسلامية</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Big+Shoulders+Display:wght@100..900&family=Jomhuria&family=Lateef:wght@200;300;400;500;600;700;800&family=Lexend+Deca:wght@100..900&display=swap");
+      </style>
+  
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&family=Lateef:wght@200;300;400;500;600;700;800&family=Lexend+Deca:wght@100..900&display=swap");
+      </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+    </style>
+
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div id="parent" class="parent">
+        <div class="navbar">
+            <a href="index.html"><img class="logo" src="images/Question and answer.png" alt=""></a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+        <a id="up" class="up hide" href="#parent"
+          ><i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff"></i
+        ></a>
+    </div>
+
+
+    <section>
+        <div class="container">
+            <div id="content" class="content section1">
+                <div class="question">
+                    <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                    <div class="ques"><p dir="rtl">عدد أبواب الجنة</p></div>
+                    
+                </div>
+                <div class="options">
+                    <div class="option1">
+                        <button class="true1" onclick="checkAnswer(this, true)" id="option1">8</button>
+                    </div>
+                    <div class="option2">
+                        <button onclick="checkAnswer(this, false)" id="option1">7</button>
+                    </div>
+                    <div class="option3">
+                        <button onclick="checkAnswer(this, false)" id="option1">6</button>
+                    </div>
+                </div>
+                
+                    <p class="hide" id="result1" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : 8<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                    <p id="resultTrue1" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                    <audio id="soundEffect" src="audio/good.mp3"></audio>
+                    <audio id="noSound" src="audio/no.mp3"></audio>
+                    <p dir="rtl" id="score"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            </div>
+    
+    <hr>
+    
+            <div id="content" class="content section2">
+                <div class="question">
+                    <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                    <div class="ques"><p dir="rtl">عدد أبواب النار</p></div>
+                    
+                </div>
+                <div class="options">
+                    <div class="option1">
+                        <button onclick="checkAnswer2(this, false)" id="option2">8</button>
+                    </div>
+                    <div class="option2">
+                        <button class="true2" onclick="checkAnswer2(this, true)" id="option2">7</button>
+                    </div>
+                    <div class="option3">
+                        <button onclick="checkAnswer2(this, false)" id="option2">6</button>
+                    </div>
+                </div>
+                
+                    <p class="hide" id="result2" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : 7<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                    <p id="resultTrue2" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                    <p dir="rtl" id="score2"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+                
+            </div>
+            
+        </div>
+    
+    <hr>
+    
+        <div id="content" class="content section3">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">عدد طبقات الأرض</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button onclick="checkAnswer3(this, false)" id="option3">9</button>
+                </div>
+                <div class="option2">
+                    <button onclick="checkAnswer3(this, false)" id="option3">5</button>
+                </div>
+                <div class="option3">
+                    <button class="true3" onclick="checkAnswer3(this, true)" id="option3">7</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result3" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : 7<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue3" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score3"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+    
+    <hr>
+    
+        <div id="content" class="content section4">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">في أي عام هاجر النبي محمد صلى الله عليه وسلم من مكة إلى المدينة</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button class="true4" onclick="checkAnswer4(this, true)" id="option4">622 ميلادي</button>
+                </div>
+                <div class="option2">
+                    <button onclick="checkAnswer4(this, false)" id="option4">612 ميلادي</button>
+                </div>
+                <div class="option3">
+                    <button onclick="checkAnswer4(this, false)" id="option4">632 ميلادي</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result4" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : 622 ميلادي<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue4" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score4"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+    
+    <hr>
+    
+        <div id="content" class="content section5">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">كم عدد سنوات الدعوة السرية في مكة</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button onclick="checkAnswer5(this, false)" id="option5">خمس سنوات</button>
+                </div>
+                <div class="option2">
+                    <button class="true5" onclick="checkAnswer5(this, true)" id="option5">ثلاث سنوات</button>
+                </div>
+                <div class="option3">
+                    <button onclick="checkAnswer5(this, false)" id="option5">اربع سنوات</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result5" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : ثلاث سنوات<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue5" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score5"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+    
+    <hr>
+    
+    
+        <div id="content" class="content section6">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">من هو الصحابي الذي جمع القرآن في عهد أبي بكر الصديق</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button class="true6" onclick="checkAnswer6(this, true)" id="option6">زيد بن ثابت عليه السلام</button>
+                </div>
+                <div class="option2">
+                    <button onclick="checkAnswer6(this, false)" id="option6">عمر بن الخطاب عليه السلام</button>
+                </div>
+                <div class="option3">
+                    <button onclick="checkAnswer6(this, false)" id="option6">عمرو بن العاص عليه السلام</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result6" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : زيد بن ثابت عليه السلام<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue6" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score6"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+    
+    <hr>
+    
+    
+        <div id="content" class="content section7">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">من هو أول من أسلم من الرجال</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button onclick="checkAnswer7(this, false)" id="option7">علي بن أبي طالب عليه السلام</button>
+                </div>
+                <div class="option2">
+                    <button onclick="checkAnswer7(this, false)" id="option7">عمر بن الخطاب عليه السلام</button>
+                </div>
+                <div class="option3">
+                    <button class="true7" onclick="checkAnswer7(this, true)" id="option7">أبو بكر الصديق عليه السلام</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result7" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : أبو بكر الصديق عليه السلام<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue7" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score7"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+    
+    <hr>
+    
+        <div id="content" class="content section8">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">كم عدد ركعات صلاة الفجر</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button onclick="checkAnswer8(this, false)" id="option8">4 ركعات</button>
+                </div>
+                <div class="option2">
+                    <button onclick="checkAnswer8(this, false)" id="option8">3 ركعات</button>
+                </div>
+                <div class="option3">
+                    <button class="true8" onclick="checkAnswer8(this, true)" id="option8">2 ركعات</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result8" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : 2 ركعات<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue8" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score8"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+    
+    <hr>
+    
+        <div id="content" class="content section9">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">ما هي أول سورة نزلت في القرآن الكريم</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button class="true9" onclick="checkAnswer9(this, true)" id="option9">سورة العلق</button>
+                </div>
+                <div class="option2">
+                    <button onclick="checkAnswer9(this, false)" id="option9">سورة الفاتحة</button>
+                </div>
+                <div class="option3">
+                    <button onclick="checkAnswer9(this, false)" id="option9">سورة النبأ</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result9" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : سورة العلق<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue9" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score9"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+    
+    <hr>
+    
+        <div id="content" class="content section10">
+            <div class="question">
+                <div class="imog"><i dir="rtl" class="fa-solid fa-circle-question" style="color: #d6cf00;"></i></div>
+                <div class="ques"><p dir="rtl">كم عدد أركان الإيمان</p></div>
+                
+            </div>
+            <div class="options">
+                <div class="option1">
+                    <button onclick="checkAnswer10(this, false)" id="option10">5 أركان</button>
+                </div>
+                <div class="option2">
+                    <button class="true10" onclick="checkAnswer10(this, true)" id="option10">6 أركان</button>
+                </div>
+                <div class="option3">
+                    <button onclick="checkAnswer10(this, false)" id="option10">7 أركان</button>
+                </div>
+            </div>
+            
+                <p class="hide" id="result10" dir="rtl">الإجابة خاطئة / الإجابة الصحيحة : 6 أركان<i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p id="resultTrue10" dir="rtl"><i class="fa-solid fa-heart" style="color: #e60000;"></i></p>
+                <p dir="rtl" id="score10"><i class="fa-solid fa-hand-point-left fa-lg" style="color: #ffc400;"></i> النقاط: 0</p>
+            
+        </div>
+        
+    </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="all-data-footer">
+        <div class="logo-contact">
+          <img class="logo" src="images/Question and answer.png" alt="picture-logo">
+          <img class="logo" src="images/me.png" alt="">
+          <h3 class="contact-name">Contact us <i class="fa-solid fa-phone-flip"></i></h3>
+          <h4 class="contact-data"><span>Number fone :</span> 01026502418</h4>
+          <h4 class="contact-data"><span>Email :</span> ballaashraf0@gmail.com</h4>
+        </div>
+    
+        <div class="social-ul">
+          <div class="social-icon-footer">
+            <a
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100016983247950"
+                  ><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/b_o_d_a_ashraf1/?igsh=amc2Y2VoY2N1Mnlw&utm_source=qr"
+                  ><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://wa.me/201026502418?text=%D9%87%D9%87%D9%80%20%D9%80%D9%B1%D8%A2%DB%8D%20%E2%99%A5+i+*Αвɒαℓℓн+آبــن_آلمـؤلف+"
+                  ><i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff"></i
+                ></a>
+          </div>
+          
+        <div class="ul-footer">
+            <li><a href="askAll.html">اسئلة عامة</a></li>
+            <li><a href="islam.html">اسئلة دينية</a></li>
+            <li><a href="kora.html">اسئلة رياضية</a></li>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+        </div>
+    
+        <div class="ul-po-pr">
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+    
+            <li>
+              <a href="#">Policy</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+              </li>
+        </div>
+    
+        </div>
+        <hr class="hr">
+      </div>
+    
+      
+    
+        <h3 class="date">@8/10/2024</h3>
+        <h2 class="copy">Copyright@ <span>Abdallah ashraf</span></h2>
+      </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
